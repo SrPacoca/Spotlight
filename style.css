@@ -26,7 +26,7 @@
   box-sizing: border-box;
   font-family: "Dosis", sans-serif;
   font-weight: 300;
-  font-size: clamp(1.1rem, 4vw, 1.4rem);
+  font-size: clamp(1rem, 4vw, 1.4rem);
 }
 
 html {
@@ -94,7 +94,7 @@ body {
     display: flex;
     position: relative;
 
-    margin: 2% auto;
+    margin: 10% auto;
   }
 
   .userPhoto {
@@ -217,7 +217,8 @@ img {
 }
 
 .menuBar {
-  width: 40px;
+  width: 10vw;
+  max-width: 40px;
   height: 4px;
 
   margin-top: 1px;
@@ -434,18 +435,26 @@ a {
 /*Seções sobre e video*/
 
 .mainH1 {
-  font-size: 2.5rem;
-  letter-spacing: 24px;
+  font-size: 100%;
+  letter-spacing: 15px;
 
   margin-left: 6%;
 }
 
+.mainImage {
+  width: 100%;
+}
+
 .sectionTitle {
-  display: flex;
+  width: 100%;
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: 1fr 1fr;
 }
 
 .groupTitle {
-  margin-left: 40px;
   margin-top: 50px;
 
   width: fit-content;
@@ -453,7 +462,7 @@ a {
 
   z-index: 1;
 
-  left: 3%;
+  left: 2%;
 }
 
 .groupTitle p {
@@ -516,14 +525,16 @@ a {
 }
 
 video {
-  height: 100%;
+  height: 50vw;
+
+  min-height: 50vh;
+  max-height: 70vh;
 }
 
 #videoMask {
-  width: 50%;
-  height: 100%;
+  width: 60vw;
 
-  min-width: 405.641px;
+  max-width: 100%;
 
   margin: auto;
 
